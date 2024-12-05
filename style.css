@@ -56,6 +56,51 @@ body {
     margin-top: 20px;
 }
 
+h2 {
+    text-align: center;
+    color: #0078d7;
+}
+
+h3 {
+    text-align: left;
+    color: #0078d7;
+}
+
+
+/* Skill-Sektion */
+
+/* Stile für Skill-Sektion */
+.skill {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px;
+}
+
+/* Beschriftung links */
+.skill p {
+    flex: 0 0 100px; 
+    margin: 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Fortschrittsbalken */
+.progress-bar {
+    flex: 1; 
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #0078d7;
+    border-radius: 5px 0 0 5px;
+}
+
+
+
 /* Projekte */
 .projects {
     background: #f9f9f9;
@@ -132,11 +177,22 @@ body {
     background: #005bb5;
 }
 
+/* Stellt sicher, dass die Seite die volle Höhe nutzt */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Footer */
+/* Der Footer bleibt am unteren Rand */
 .footer {
+    margin-top: auto;
     background: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
     font-size: 14px;
 }
+
