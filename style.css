@@ -105,6 +105,7 @@ h3 {
 
 
 /* Projekte */
+
 .projects {
     background: #f9f9f9;
     padding: 40px 0;
@@ -147,6 +148,7 @@ h3 {
     background: #06427d;
     transform: translateY(-3px);
 }
+
 
 /* Kontakt */
 .contact {
@@ -202,10 +204,6 @@ html, body {
     font-size: 14px;
 }
 
-.project-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
+
 
 
