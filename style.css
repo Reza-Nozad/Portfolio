@@ -70,6 +70,7 @@ h3 {
 /* Skill-Sektion */
 
 /* Stile für Skill-Sektion */
+
 .skill {
     display: flex; 
     align-items: center; 
@@ -77,6 +78,7 @@ h3 {
 }
 
 /* Beschriftung links */
+
 .skill p {
     flex: 0 0 100px; 
     margin: 0;
@@ -85,6 +87,7 @@ h3 {
 }
 
 /* Fortschrittsbalken */
+
 .progress-bar {
     flex: 1; 
     background-color: #e0e0e0;
@@ -198,4 +201,5 @@ html, body {
     padding: 10px 0;
     font-size: 14px;
 }
+
 
