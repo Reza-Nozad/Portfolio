@@ -85,33 +85,26 @@ h1 {
     margin-bottom: 10px;
 }
 
-.todo-list li .todo-checkbox {
+.todo-list input[type="checkbox"] {
     margin-right: 10px;
 }
 
-.todo-list li .todo-text {
-    flex: 1;
-    font-size: 1rem;
-}
-
-.todo-list li .todo-text.completed {
+.todo-list span.completed {
     text-decoration: line-through;
-    color: #999;
 }
 
-.todo-list li .todo-delete {
+.todo-list button {
     background-color: #d9534f;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
+    color: white;
     padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
     cursor: pointer;
 }
 
-.todo-list li .todo-delete:hover {
+.todo-list button:hover {
     background-color: #c9302c;
 }
-
 
 .todo-info {
     text-align: center;
@@ -119,3 +112,4 @@ h1 {
     color: #666666;
     margin-top: 20px;
 }
+
