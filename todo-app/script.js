@@ -1,4 +1,3 @@
-// Selektiere die wichtigen Elemente
 const form = document.querySelector('.todo-form'); 
 const input = document.querySelector('.todo-input'); 
 const todoList = document.querySelector('.todo-list'); 
