@@ -20,6 +20,7 @@ form.addEventListener('submit', function(event) {
 
     todos.push(newTask); 
     input.value = ''; 
+    saveTodos();
 
     renderTodos(); 
 });
@@ -57,11 +58,39 @@ function renderTodos() {
 function toggleTaskCompletion(taskId) {
     const task = todos.find(task => task.id === taskId);
     task.completed = !task.completed; 
+    saveTodos();
     renderTodos(); 
 }
 
 function deleteTask(taskId) {
-    todos = todos.filter(task => task.id !== taskId); 
+    todos = todos.filter(task => task.id !== taskId);
+    saveTodos(); 
     renderTodos(); 
 }
+
+
+function saveTodos() {
+   
+    localStorage.setItem('todos', JSON.stringify(todos));
+}
+
+function loadTodos() {
+    
+    const savedTodos = localStorage.getItem('todos');
+    
+    if (savedTodos) {
+
+        todos = JSON.parse(savedTodos);
+    } else {
+    
+        todos = [];
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    loadTodos(); 
+    renderTodos();
+});
+
+
 
